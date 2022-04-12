@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import BioData from './component/BioData';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BioData
+        Name="Hm.Sazib Howlader"
+        Eamil="hmsazib21@gmail.com"
+        Phone="01781471993"
+        skills={["js","react","python"]}
+        Enterests={["web 3", "NTF"]}
+        referencedby="SR Sutu"
+      />
+      <BioData
+        Name="Md Sahin"
+        Eamil="hmsahin@gmail.com"
+        Phone="01568954565"
+        skills={["Html","Css","js","React","python"]}
+        Enterests={["web 3", "NTF", "BLACKLINE"]}
+        referencedby="Hm Sazib"
+      />
     </div>
   );
 }
